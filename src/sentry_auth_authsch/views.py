@@ -5,7 +5,6 @@ import logging
 import requests
 
 from sentry.auth.view import AuthView, ConfigureView
-from string import maketrans
 from .constants import ERR_INVALID_RESPONSE, PROFILE_ENDPOINT
 
 logger = logging.getLogger("sentry.auth.authsch")

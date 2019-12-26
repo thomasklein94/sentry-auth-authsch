@@ -26,7 +26,7 @@ tests_require = [
 
 setup(
     name='sentry-auth-authsch',
-    version='1.0.0',
+    version='1.0.1',
     author='Tamas Kiss',
     author_email='tamas.kiss@kszk.bme.hu',
     url='https://github.com/thomasklein94/sentry-auth-authsch.git',

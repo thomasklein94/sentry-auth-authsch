@@ -8,9 +8,8 @@ if django.VERSION[:2] >= (1, 8):
     default_app_config = "sentry_auth_authsch.apps.Config"
 else:
     # Provide backwards compatibility.
-    from sentry import auth, options
+    from sentry import auth
 
     from .provider import AuthSCHProvider
 
     auth.register('authsch', AuthSCHProvider)
-

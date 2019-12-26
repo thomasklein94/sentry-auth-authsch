@@ -45,7 +45,7 @@ class AuthSCHProvider(OAuth2Provider):
         ]
 
     def get_refresh_token_url(self):
-        return self.access_token_endpoint
+        return self.access_token_url
 
     def build_identity(self, state):
         data = state["data"]

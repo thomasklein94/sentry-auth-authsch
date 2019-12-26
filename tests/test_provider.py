@@ -48,3 +48,19 @@ class AuthSCHProviderTest(TestCase):
 
         with pytest.raises(IdentityNotValid):
             provider.refresh_identity(auth_identity)
+
+    def test_get_refresh_token_url_noexc(self):
+        provider = self.auth_provider.get_provider()
+        provider.get_refresh_token_url()
+
+    def test_get_auth_pipeline_noexc(self):
+        provider = self.auth_provider.get_provider()
+        provider.get_auth_pipeline()
+
+    def test_get_client_id_noexc(self):
+        provider = self.auth_provider.get_provider()
+        provider.get_client_id()
+
+    def test_get_client_secret_noexc(self):
+        provider = self.auth_provider.get_provider()
+        provider.get_client_secret()
